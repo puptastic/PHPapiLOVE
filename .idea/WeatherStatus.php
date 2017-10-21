@@ -14,15 +14,16 @@
      * Time: 8:18 PM
      */
 
-    /** NOTE- Houston Code 4699066 */
+    /** NOTE- Houston Code: 4699066
+        London: 2643743
+    */
+
 
     // Building url for api call
     $strURL = "http://api.openweathermap.org/data/2.5/weather?id=4699066&appid=" . FindValue("OpenWeatherAPI", "Keys.txt") . "&units=imperial";
 
     // Getting JSON data
     $data = get_data($strURL);
-    //$data = get_data("http://api.openweathermap.org/data/2.5/weather?id=4699066&appid=3b92b7895de61eaa7c92b05c1e52358d&units=imperial"); // Houston
-    //$data= get_data("http://api.openweathermap.org/data/2.5/weather?id=2643743&appid=3b92b7895de61eaa7c92b05c1e52358d&units=imperial"); // London
 
     // show data (debugging only)
     //var_dump($data);
