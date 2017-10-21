@@ -1,0 +1,187 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color:#F7F7F7;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+span {
+    background-color:#E0E0E0;
+    width:75px;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 4px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+textarea {
+     width: 100%;
+     height: 150px;
+     padding: 12px 20px;
+     box-sizing: border-box;
+     border: 2px solid #ccc;
+     border-radius: 4px;
+     background-color: #f8f8f8;
+     font-size: 16px;
+     resize: none;
+}
+
+input[type=text], input[type=number] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus , input[type=number]:focus{
+    border-bottom: 2px solid #333;
+}
+
+select {
+    width:100px;
+    padding:5px;
+    margin-top:8px;
+    font-family:Arial;
+    line-height:1;
+}
+
+select:hover {
+    color:indigo;
+}
+
+#frmMain {
+    width:1000px;
+    margin:0 auto;
+    line-height:1;
+    padding:10px;
+    border-radius:0px;
+    background-color:#ffffff;
+    color:#333;
+    font-size:18px;
+    -webkit-appearance:none;
+    box-shadow:inset 0 0 10px 0 rgba(0,0,0,0.6);
+    outline:none;
+}
+
+p{
+    background:cadetblue;
+    color:white;
+    outline:indigo solid thick;
+    padding:2px;
+}
+
+table.center
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td
+{
+    text-align: left;
+}
+
+td *
+{
+    display: inline;
+}
+
+/*span
+{
+    display: inline-block;
+}*/
+
+span.sqlData
+{
+    /*font-weight: 900;*/
+    vertical-align: top;
+    font-size: 16px;
+}
+
+span.BoldMe
+{
+    font-weight: 900;
+}
+
+.reveal-if-active
+{
+    vertical-align: top;
+    font-size: 16px;
+    /*    margin-left:auto;
+        margin-right:auto;*/
+}
+
+label
+{
+    vertical-align: middle;
+}
+
+/*hr
+{
+    width: 800px;
+}*/
+
+input
+{
+    vertical-align: middle;
+}
+
+.lblLeft
+{
+    display: inline-block;
+    width: 175px;
+    height: 25px;
+}
+
+/**********SECTION PERTAINS TO POP-UPS AFTER HOVERING OVER AN IMAGE************/
+.tooltip
+{
+    position: relative;
+    display: inline-block;
+    /*border-bottom: 1px dotted black;*/
+}
+
+.tooltip .tooltiptext
+{
+    visibility: hidden;
+    width: 120px;
+    background-color: blue;
+    color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    font-size: 12px;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 2;
+}
+
+.tooltip:hover .tooltiptext
+{
+    visibility: visible;
+}
+/******************************************************************************/
+
+@media print {
+/*	@page {	margin: 0; }
+    body
+    { margin: 1.6cm; }*/
+
+    .no-print, .no-print * {
+        display: none !important;
+    }
+}
